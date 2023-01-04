@@ -1,33 +1,11 @@
-/* .App {
-  text-align: center;
-} */
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* .App h1 {
-	font-size: 1.75rem;
-} */
-
-/* .Wrapper {
-  margin: 0.5rem;
-} */
-
 .MainNav {
-  /* display: flex; */
-  background-color: #161b22;
-  /* justify-content: space-around; */
-  /* align-items: center; */
+  background-color: var(--dark-gray);
   height: 50px;
-  /* padding: 0 1rem; */
+}
+
+.MainNav a,
+.MainNav button {
+  color:white;
 }
 
 .ProfileControls {
@@ -63,31 +41,26 @@
   justify-content: center;
 }
 
-button {
-  justify-content: center;
-  align-items: center;
-  display: inline-flex;
-  padding: 0.25rem;
+.Btn {
+  border: 1px solid var(--dark-gray);
 }
 
-input {
-  height: 30px;
-  width: 100%;
-  max-width: 300px;
+.BtnAlt {
+  border: 1px solid white;
 }
 
-/* .App-article {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Tags li {
+  display: inline-block;
+  margin: 0.25rem 0.25rem 0.25rem 0;
+}
+
+.Pill {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   color: white;
+  background-color: rgb(4 120 87);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
 }
-
-.App-link {
-  color: #61dafb;
-} */
-

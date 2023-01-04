@@ -1,5 +1,4 @@
 import "./App.css";
-import logo from "./logo.svg";
 
 function App() {
   return (
@@ -30,6 +29,7 @@ function App() {
                 viewBox="0 0 16 16"
                 version="1.1"
                 width="16"
+                className="WhiteIcon"
               >
                 <path
                   fill-rule="evenodd"
@@ -41,10 +41,16 @@ function App() {
           <div className="ProfileControls">
             <button
               aria-label="New Repository, opens a dialog"
-              className="ProfileControls-Item"
+              className="ProfileControls-Item BtnAlt"
             >
               New
-              <svg height="16" viewBox="0 0 16 16" version="1.1" width="16">
+              <svg
+                height="16"
+                viewBox="0 0 16 16"
+                version="1.1"
+                width="16"
+                className="WhiteIcon pl-1"
+              >
                 <path
                   fill-rule="evenodd"
                   d="M7.75 2a.75.75 0 01.75.75V7h4.25a.75.75 0 110 1.5H8.5v4.25a.75.75 0 11-1.5 0V8.5H2.75a.75.75 0 010-1.5H7V2.75A.75.75 0 017.75 2z"
@@ -82,75 +88,126 @@ function App() {
         </nav>
       </header>
 
-      <main className="m-2">
-        <div>
-          <h1 className="text-3xl font-bold underline">
-            <a href="">Cool repo</a>
+      <main className="mx-auto mt-8 px-4 max-w-screen-xl">
+        <div className="flex justify-between pb-8 border-b-2">
+          <h1 className="text-2xl font-bold">
+            <a href="#">cool-repo</a>
           </h1>
 
-          <div>
-            <button>Watch</button>
-            <button>Fork</button>
-            <button>Star</button>
+          <div className="flex">
+            <button className="Btn">Watch</button>
+            <button className="Btn ml-2">Fork</button>
+            <button className="Btn ml-2">Star</button>
           </div>
         </div>
 
-        <hr />
+        <div className="flex justify-between mt-8">
+          <div className="grow mr-8">
+            <div className="flex justify-between mb-8">
+              <div>
+                <button className="Btn">main</button>
+                <a href="#" className="ml-2">
+                  <strong>85</strong> Branches
+                </a>
+                <a href="#" className="ml-2">
+                  <strong>141</strong> Tags
+                </a>
+              </div>
 
-        <div className="CodePane">
-          <div>
-            <button>main</button>
-            <a href="#">Branches</a>
-            <a href="#">Tags</a>
+              <div>
+                <button className="Btn">Go to file</button>
+                <button className="Btn ml-2">Add file</button>
+                <button className="Btn ml-2">Code</button>
+              </div>
+            </div>
+
+            <ul>
+              <li class="flex justify-between">
+                <img
+                  src="https://avatars.githubusercontent.com/u/35239154?v=4"
+                  alt="avatar"
+                  className="Avatar"
+                />
+                <p>
+                  <a href="#">lindseywild</a> adds tailwind styling to files (
+                  <a href="#">#235</a>)
+                </p>
+                <p>checkmark de7d1c3</p>
+                <p>2 weeks ago</p>
+                <p>
+                  <a href="#">15,204 commits</a>
+                </p>
+              </li>
+            </ul>
           </div>
 
-          <div>
-            <button>Go to file</button>
-            <button>Add file</button>
-            <button>Code</button>
+          <div className="max-w-sm border bg-neutral-100 p-4">
+            <h2>About</h2>
+            <p>This is the coolest repo you'll ever see.</p>
+            <a href="#" className="block">
+              coolrepos.com
+            </a>
+
+            <ul className="Tags mt-4">
+              <li>
+                <a href="#" className="Pill">
+                  website
+                </a>
+              </li>
+              <li>
+                <a href="#" className="Pill">
+                  engineering
+                </a>
+              </li>
+              <li>
+                <a href="#" className="Pill">
+                  js
+                </a>
+              </li>
+              <li>
+                <a href="#" className="Pill">
+                  bun
+                </a>
+              </li>
+              <li>
+                <a href="#" className="Pill">
+                  demo
+                </a>
+              </li>
+              <li>
+                <a href="#" className="Pill">
+                  user interface
+                </a>
+              </li>
+              <li>
+                <a href="#" className="Pill">
+                  design
+                </a>
+              </li>
+            </ul>
+
+            <ul className="RelatedLinks mt-4">
+              <li>
+                <a href="#">Readme</a>
+              </li>
+              <li>
+                <a href="#">Code of conduct</a>
+              </li>
+              <li>
+                <a href="#">Security policy</a>
+              </li>
+              <li>
+                <a href="#">179k stars</a>
+              </li>
+              <li>
+                <a href="#">6.7k watching</a>
+              </li>
+              <li>
+                <a href="#">41.5k forks</a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div className="Sidebar">
-          <h2>About</h2>
-          <p>This is the coolest repo you'll ever see.</p>
-          <a href="#">coolrepos.com</a>
-
-          <div className="Tags">
-            <a href="#">website</a>
-            <a href="#">engineering</a>
-            <a href="#">js</a>
-            <a href="#">bun</a>
-            <a href="#">demo</a>
-          </div>
-
-          <div className="RelatedLinks">
-            <a href="#">Readme</a>
-            <a href="#">Code of conduct</a>
-            <a href="#">Security policy</a>
-            <a href="#">179k stars</a>
-            <a href="#">6.7k watching</a>
-            <a href="#">41.5k forks</a>
-          </div>
-
-          {/* <h2>Releases <span>99</span></h2>
-          <a href="#">18.2.0 (June 14, 2022)</a>
-          <span>Latest</span>
-          <a href="#">+98 releases</a> */}
-        </div>
-
-        {/* <article className="App-article">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h3>Welcome to React!</h3>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </article> */}
       </main>
     </div>
   );
