@@ -26,10 +26,6 @@
   fill: white;
 }
 
-.AppHeader-logo:hover {
-  background-color: hotpink;
-}
-
 .Avatar {
   max-width: 30px;
   border-radius: 15px;

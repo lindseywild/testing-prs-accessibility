@@ -122,7 +122,7 @@ function App() {
             </div>
 
             <ul>
-              <li class="flex justify-between">
+              <li class="flex justify-between items-center border border-gray-800 p-2">
                 <img
                   src="https://avatars.githubusercontent.com/u/35239154?v=4"
                   alt="avatar"
@@ -132,7 +132,22 @@ function App() {
                   <a href="#">lindseywild</a> adds tailwind styling to files (
                   <a href="#">#235</a>)
                 </p>
-                <p>checkmark de7d1c3</p>
+                <p className="flex items-center">
+                  <svg
+                    aria-label="48 / 48 checks OK"
+                    role="img"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"
+                    ></path>
+                  </svg>{" "}
+                  de7d1c3
+                </p>
                 <p>2 weeks ago</p>
                 <p>
                   <a href="#">15,204 commits</a>
@@ -144,9 +159,7 @@ function App() {
           <div className="max-w-sm border bg-neutral-100 p-4">
             <h2>About</h2>
             <p>This is the coolest repo you'll ever see.</p>
-            <a href="#" className="block">
-              coolrepos.com
-            </a>
+            <a href="#">coolrepos.com</a>
 
             <ul className="Tags mt-4">
               <li>

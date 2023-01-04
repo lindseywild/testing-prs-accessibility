@@ -4,6 +4,7 @@
 
 :root {
   --dark-gray: #161b22;
+  --dark-emerald: #0f766e;
 }
 
 body {
@@ -28,6 +29,12 @@ button {
   padding: 0.15rem 0.3rem;
 }
 
+button:hover {
+  background-color: var(--dark-emerald);
+  color: white;
+  transition : background 100ms ease-in-out;
+}
+
 input {
   height: 30px;
   width: 100%;
@@ -37,8 +44,12 @@ input {
 }
 
 a {
-  color: #0f766e;
-  text-decoration: underline;
+  color: var(--dark-emerald);
+  border-bottom: 1px solid var(--dark-emerald);
+}
+
+a:hover {
+  border-bottom-width: 2px;
 }
 
 h2 {
