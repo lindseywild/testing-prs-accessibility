@@ -57,6 +57,13 @@
   color: white;
   background-color: rgb(4 120 87);
   text-decoration: none;
-  padding: 0.25rem 0.5rem;
+  padding: 0.2rem 0.4rem;
+  border: 2px solid transparent;
   border-radius: 20px;
+}
+
+.Pill:hover {
+  background-color: rgb(3 100 72);
+  border-color: var(--dark-gray);
+  border-bottom-width: 2px;
 }
