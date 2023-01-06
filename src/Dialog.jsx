@@ -63,7 +63,7 @@ export function Dialog({ showDialog, onClose }) {
           <button className="Btn" onClick={onClose}>
             Cancel
           </button>
-          <button className="Btn ml-4" type="submit">
+          <button className="Btn BtnPrimary ml-4" type="submit">
             Create
           </button>
         </div>
