@@ -41,7 +41,7 @@ function App() {
           <div className="ProfileControls">
             <button
               aria-label="New Repository, opens a dialog"
-              className="ProfileControls-Item BtnAlt"
+              className="ml-4 BtnAlt"
             >
               New
               <svg
@@ -49,7 +49,7 @@ function App() {
                 viewBox="0 0 16 16"
                 version="1.1"
                 width="16"
-                className="WhiteIcon pl-1"
+                className="pl-1"
               >
                 <path
                   fillRule="evenodd"
