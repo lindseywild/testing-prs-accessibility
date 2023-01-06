@@ -1,6 +1,12 @@
+import { useState } from "react";
+import { Dialog } from "./Dialog";
 import "./App.css";
 
 function App() {
+  const [showDialog, setShowDialog] = useState(false);
+  const open = () => setShowDialog(true);
+  const close = () => setShowDialog(false);
+
   return (
     <div>
       <header>
@@ -42,6 +48,9 @@ function App() {
             <button
               aria-label="New Repository, opens a dialog"
               className="ml-4 BtnAlt"
+              onClick={() => {
+                open();
+              }}
             >
               New
               <svg
@@ -222,6 +231,7 @@ function App() {
           </div>
         </div>
       </main>
+      <Dialog showDialog={showDialog} />
     </div>
   );
 }
