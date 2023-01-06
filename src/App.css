@@ -32,11 +32,11 @@
   justify-content: center;
 }
 
-.Btn {
+button.Btn {
   border: 1px solid var(--dark-gray);
 }
 
-.BtnAlt {
+button.BtnAlt {
   border: 1px solid white;
 }
 

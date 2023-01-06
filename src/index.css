@@ -37,7 +37,7 @@ button:hover {
   transition: background 100ms ease-in-out;
 }
 
-input {
+input[type="text"] {
   height: 30px;
   width: 100%;
   max-width: 300px;
