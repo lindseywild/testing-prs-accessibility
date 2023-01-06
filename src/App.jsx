@@ -4,11 +4,21 @@ import "./App.css";
 
 function App() {
   const [showDialog, setShowDialog] = useState(false);
-  const open = () => setShowDialog(true);
-  const close = () => setShowDialog(false);
+  const open = () => {
+    setShowDialog(true);
+  };
+  const close = () => {
+    setShowDialog(false);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      close();
+    }
+  };
 
   return (
-    <div>
+    <div onKeyDown={(e) => handleKeyDown(e)}>
       <header>
         <nav className="MainNav flex justify-around	items-center px-4">
           <a href="/" aria-label="HitGub homepage" className="border-none">
@@ -231,7 +241,7 @@ function App() {
           </div>
         </div>
       </main>
-      <Dialog showDialog={showDialog} />
+      <Dialog showDialog={showDialog} onClose={() => close()} />
     </div>
   );
 }
