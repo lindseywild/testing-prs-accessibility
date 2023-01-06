@@ -4,6 +4,7 @@
 
 :root {
   --dark-gray: #161b22;
+  --light-gray: rgb(245 245 245);
   --dark-emerald: #0f766e;
 }
 
@@ -27,12 +28,13 @@ button {
   align-items: center;
   display: inline-flex;
   padding: 0.15rem 0.3rem;
+  background-color: #fff;
+  color: var(--dark-gray);
 }
 
 button:hover {
-  background-color: var(--dark-emerald);
-  color: white;
-  transition : background 100ms ease-in-out;
+  background-color: var(--light-gray);
+  transition: background 100ms ease-in-out;
 }
 
 input {

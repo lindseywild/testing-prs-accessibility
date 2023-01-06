@@ -3,8 +3,7 @@
   height: 50px;
 }
 
-.MainNav a,
-.MainNav button {
+.MainNav a {
   color:white;
 }
 
@@ -12,10 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.ProfileControls-Item {
-  margin-left: 0.75rem;
 }
 
 .AppHeader-logo {
