@@ -69,6 +69,7 @@ function App() {
                 version="1.1"
                 width="16"
                 className="pl-1"
+                role="presentation"
               >
                 <path
                   fillRule="evenodd"
