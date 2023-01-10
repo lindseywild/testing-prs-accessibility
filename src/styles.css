@@ -707,6 +707,11 @@ h2 {
   background-color: rgb(38 38 38 / var(--tw-bg-opacity));
 }
 
+.backdrop\:bg-gray-50::backdrop {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
 .backdrop\:opacity-50::backdrop {
   opacity: 0.5;
 }
