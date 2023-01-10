@@ -40,6 +40,15 @@ button.BtnAlt {
   border: 1px solid white;
 }
 
+button.BtnPrimary {
+  background-color: rgb(4 120 87);
+  color: white;
+}
+
+button.BtnPrimary:hover {
+  background-color: rgb(3 100 72);
+}
+
 .Tags li {
   display: inline-block;
   margin: 0.25rem 0.25rem 0.25rem 0;
