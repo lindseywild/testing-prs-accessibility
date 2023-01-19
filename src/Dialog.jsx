@@ -58,7 +58,7 @@ export function Dialog({ showDialog, onClose }) {
             New organization
           </label>
         </fieldset>
-        <div className="flex mt-4 justify-end">
+        <div className="flex mt-4 justify-end" aria-label="form action buttons">
           <button className="Btn" onClick={onClose}>
             Cancel
           </button>
