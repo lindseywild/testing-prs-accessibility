@@ -26,7 +26,7 @@ export function Dialog({ showDialog, onClose }) {
       <form>
         <h4>Create something new</h4>
         <fieldset className="mt-6 mb-4">
-          <legend>Choose what you want to create</legend>
+          <legend>Choose what you want to create:</legend>
           <label className="flex" htmlFor="repo">
             <input
               className="mr-3"
