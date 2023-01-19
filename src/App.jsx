@@ -1,8 +1,24 @@
+import { useState } from "react";
+import { Dialog } from "./Dialog";
 import "./App.css";
 
 function App() {
+  const [showDialog, setShowDialog] = useState(false);
+  const open = () => {
+    setShowDialog(true);
+  };
+  const close = () => {
+    setShowDialog(false);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      close();
+    }
+  };
+
   return (
-    <div>
+    <div onKeyDown={(e) => handleKeyDown(e)}>
       <header>
         <nav className="MainNav flex justify-around	items-center px-4">
           <a href="/" aria-label="HitGub homepage" className="border-none">
@@ -42,6 +58,9 @@ function App() {
             <button
               aria-label="New Repository, opens a dialog"
               className="ml-4 BtnAlt"
+              onClick={() => {
+                open();
+              }}
             >
               New
               <svg
@@ -50,6 +69,7 @@ function App() {
                 version="1.1"
                 width="16"
                 className="pl-1"
+                role="presentation"
               >
                 <path
                   fillRule="evenodd"
@@ -222,6 +242,7 @@ function App() {
           </div>
         </div>
       </main>
+      <Dialog showDialog={showDialog} onClose={() => close()} />
     </div>
   );
 }
